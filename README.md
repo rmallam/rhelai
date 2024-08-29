@@ -1,7 +1,10 @@
+ ```
  aws iam create-role --role-name vmimport --assume-role-policy-document "file://vmimport-trust-policy.json"
-
+```
+ ```
  aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-document "file://vmimport-role.json"
-
+```
+```
 aws ec2 import-image --description "My server disks" --disk-containers "file://containers.json"
 {
     "Description": "My server disks",
@@ -21,3 +24,4 @@ aws ec2 import-image --description "My server disks" --disk-containers "file://c
     ],
     "Status": "active",
     "StatusMessage": "pending"
+    ```
