@@ -1,0 +1,7 @@
+[
+  {
+    "Description": "My Server OVA",
+    "Format": "raw",
+    "Url": "s3://aifedora1/test.raw"
+  }
+]
